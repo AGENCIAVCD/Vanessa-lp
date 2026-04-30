@@ -6,6 +6,7 @@ export const siteConfig = {
   funnelUrl: "/f",
   availableSpots: 27,
   closingDate: "11 de maio, às 23h59",
+  closingDateTime: "2026-05-11T23:59:00-03:00",
   ctaPrimary: "QUERO ENTRAR NO GRUPO VIP",
   ctaSecondary: "ENTRAR NO GRUPO VIP AGORA",
   ctaFinal: "QUERO ENTRAR NO GRUPO",

@@ -4,6 +4,7 @@ import anime from "animejs";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
+import { HeroCountdown } from "@/components/HeroCountdown";
 import { ArrowUpRightIcon, CheckIcon } from "@/components/icons";
 import { WhatsappButton } from "@/components/WhatsappButton";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
@@ -12,12 +13,14 @@ type HeroSectionProps = {
   whatsappGroupUrl: string;
   availableSpots: number;
   ctaLabel: string;
+  countdownTarget: string;
 };
 
 export function HeroSection({
   whatsappGroupUrl,
   availableSpots,
-  ctaLabel
+  ctaLabel,
+  countdownTarget
 }: HeroSectionProps) {
   const heroRef = useRef<HTMLElement>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -159,7 +162,11 @@ export function HeroSection({
             </span>
           </div>
 
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center short-hero:mt-4" data-hero-copy data-hero-item>
+          <div className="mt-5 max-w-[520px] short-hero:mt-4" data-hero-copy data-hero-item>
+            <HeroCountdown targetDateTime={countdownTarget} />
+          </div>
+
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center short-hero:mt-4" data-hero-copy data-hero-item>
             <WhatsappButton
               aria-label="Entrar no grupo VIP do WhatsApp para acessar a promoção do Protocolo Reset"
               href={whatsappGroupUrl}
@@ -175,7 +182,7 @@ export function HeroSection({
           </div>
 
           <p
-            className="mt-3 max-w-lg font-body text-sm font-semibold leading-6 text-ink/85 short-hero:max-w-xl short-hero:text-[13px] short-hero:leading-5"
+            className="mt-3 hidden max-w-lg font-body text-sm font-semibold leading-6 text-ink/85 xl:block short-hero:max-w-xl short-hero:text-[13px] short-hero:leading-5"
             data-hero-copy
             data-hero-item
           >

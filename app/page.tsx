@@ -28,6 +28,7 @@ export default function Home() {
       <HeroSection
         availableSpots={siteConfig.availableSpots}
         ctaLabel={siteConfig.ctaPrimary}
+        countdownTarget={siteConfig.closingDateTime}
         whatsappGroupUrl={siteConfig.funnelUrl}
       />
       <VipBenefits />

@@ -207,12 +207,12 @@ export function HeroSection({
         </div>
 
         <div className="hidden lg:block" aria-hidden="true">
-          <div className="absolute bottom-10 right-10 max-w-[330px] border border-white/30 bg-forest/88 p-5 text-white shadow-soft backdrop-blur-md short-hero:bottom-7 short-hero:p-4">
-            <p className="font-body text-[10px] font-bold uppercase tracking-[0.22em] text-rosegold">
+          <div className="absolute bottom-10 right-10 max-w-[330px] border border-rosegold/45 bg-forest p-5 text-white shadow-[0_22px_55px_rgba(31,61,54,0.34)] short-hero:bottom-7 short-hero:p-4">
+            <p className="font-body text-[10px] font-extrabold uppercase tracking-[0.22em] text-rosegold">
               Grupo reservado
             </p>
             <p className="mt-2 font-display text-3xl leading-none short-hero:text-2xl">{availableSpots} vagas</p>
-            <p className="mt-2 font-body text-sm font-medium leading-6 text-white/90 short-hero:text-xs short-hero:leading-5">
+            <p className="mt-2 font-body text-sm font-semibold leading-6 text-white short-hero:text-xs short-hero:leading-5">
               Prioridade para quem entrar primeiro no grupo VIP.
             </p>
           </div>

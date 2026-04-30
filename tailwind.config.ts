@@ -27,6 +27,9 @@ const config: Config = {
       backgroundImage: {
         "hero-glow":
           "radial-gradient(circle at top left, rgba(200, 162, 122, 0.32), transparent 40%), radial-gradient(circle at top right, rgba(31, 61, 54, 0.16), transparent 35%), linear-gradient(135deg, rgba(255,255,255,0.72), rgba(245,241,236,0.94))"
+      },
+      screens: {
+        "short-hero": { raw: "(min-width: 1024px) and (max-height: 980px)" }
       }
     }
   },

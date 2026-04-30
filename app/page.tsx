@@ -28,7 +28,7 @@ export default function Home() {
       <HeroSection
         availableSpots={siteConfig.availableSpots}
         ctaLabel={siteConfig.ctaPrimary}
-        whatsappGroupUrl={siteConfig.whatsappGroupUrl}
+        whatsappGroupUrl={siteConfig.funnelUrl}
       />
       <VipBenefits />
       <UrgencyBanner
@@ -44,7 +44,7 @@ export default function Home() {
         buttonLabel={siteConfig.ctaSecondary}
         description="Entre agora e garanta seu acesso VIP antes que o grupo feche."
         title="Entre agora e garanta seu acesso VIP antes que o grupo feche."
-        whatsappGroupUrl={siteConfig.whatsappGroupUrl}
+        whatsappGroupUrl={siteConfig.funnelUrl}
       />
       <FinalWarning />
       <CTASection
@@ -53,12 +53,12 @@ export default function Home() {
         eyebrow="ENTRE AGORA E GARANTA SEU ACESSO VIP"
         title="A sua oportunidade começa no grupo VIP."
         variant="dark"
-        whatsappGroupUrl={siteConfig.whatsappGroupUrl}
+        whatsappGroupUrl={siteConfig.funnelUrl}
       />
       <Footer closingDate={siteConfig.closingDate} />
       <StickyWhatsappButton
         label={siteConfig.ctaFinal}
-        whatsappGroupUrl={siteConfig.whatsappGroupUrl}
+        whatsappGroupUrl={siteConfig.funnelUrl}
       />
     </main>
   );

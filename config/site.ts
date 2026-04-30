@@ -1,7 +1,9 @@
 export const siteConfig = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://protocolo-reset.example.com",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://vanessa-lp.vercel.app",
   whatsappGroupUrl:
-    process.env.NEXT_PUBLIC_WHATSAPP_GROUP_URL ?? "https://chat.whatsapp.com/SEU-LINK-AQUI",
+    process.env.NEXT_PUBLIC_WHATSAPP_GROUP_URL ??
+    "https://chat.whatsapp.com/BfiyJJfePlMCQEVwWY0QUi?mode=gi_t",
+  funnelUrl: "/f",
   availableSpots: 27,
   closingDate: "11 de maio, às 23h59",
   ctaPrimary: "QUERO ENTRAR NO GRUPO VIP",

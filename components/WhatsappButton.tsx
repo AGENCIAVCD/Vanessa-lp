@@ -15,10 +15,16 @@ export function WhatsappButton({
   label,
   className,
   compact = false,
+  href,
+  rel,
+  target,
   ...props
 }: WhatsappButtonProps) {
   const ref = useRef<HTMLAnchorElement>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const isInternalLink = typeof href === "string" && href.startsWith("/");
+  const resolvedTarget = target ?? (isInternalLink ? "_self" : "_blank");
+  const resolvedRel = rel ?? (resolvedTarget === "_blank" ? "noreferrer" : undefined);
   const resolvedClassName = [
     "group inline-flex items-center justify-center gap-3 rounded-full bg-whatsapp px-6 py-4 font-body text-sm font-semibold uppercase tracking-[0.22em] text-white shadow-[0_18px_34px_rgba(37,211,102,0.16)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#1fb856] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-4 focus-visible:ring-offset-sand",
     compact ? "px-5 py-3 text-[11px]" : "w-full sm:w-auto",
@@ -57,9 +63,10 @@ export function WhatsappButton({
     <a
       {...props}
       className={resolvedClassName}
+      href={href}
       ref={ref}
-      rel="noreferrer"
-      target="_blank"
+      rel={resolvedRel}
+      target={resolvedTarget}
     >
       <WhatsappIcon className="h-5 w-5 shrink-0" />
       <span>{label}</span>

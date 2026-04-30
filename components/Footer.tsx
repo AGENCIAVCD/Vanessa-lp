@@ -7,7 +7,7 @@ type FooterProps = {
 export function Footer({ closingDate }: FooterProps) {
   return (
     <footer className="px-5 pb-28 pt-6 sm:px-8 lg:px-10">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 rounded-[2rem] border border-rosegold/18 bg-white/72 px-6 py-6 text-center shadow-soft backdrop-blur sm:flex-row sm:text-left">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 rounded-[1.25rem] border border-rosegold/25 bg-white px-6 py-6 text-center shadow-soft sm:flex-row sm:text-left">
         <div className="rounded-full border border-rosegold/25 bg-sand px-4 py-3">
           <Image
             alt="Logo da clínica Vanessa Carvalho"
@@ -18,10 +18,10 @@ export function Footer({ closingDate }: FooterProps) {
           />
         </div>
         <div>
-          <p className="font-body text-[11px] uppercase tracking-[0.28em] text-forest/60">
+          <p className="font-body text-[11px] font-bold uppercase tracking-[0.2em] text-forest">
             Protocolo Reset • Especial Dia das Mães
           </p>
-          <p className="mt-2 font-body text-sm text-ink/62">
+          <p className="mt-2 font-body text-sm font-medium text-ink">
             Campanha promocional com divulgação exclusiva no grupo VIP. Encerramento previsto para {closingDate}.
           </p>
         </div>

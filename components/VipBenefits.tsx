@@ -40,7 +40,7 @@ export function VipBenefits() {
   return (
     <section className="px-5 py-14 sm:px-8 sm:py-16 lg:px-10" id="beneficios">
       <div className="mx-auto max-w-7xl">
-        <div className="rounded-[2rem] bg-forest px-6 py-8 text-white shadow-soft sm:px-8 sm:py-10 lg:px-10 lg:py-12">
+        <div className="rounded-[1.25rem] bg-forest px-6 py-8 text-white shadow-soft sm:px-8 sm:py-10 lg:px-10 lg:py-12">
           <div className="max-w-2xl">
             <p className="font-body text-[11px] uppercase tracking-[0.34em] text-rosegold">
               SOMENTE NO GRUPO VOCÊ TERÁ
@@ -53,7 +53,7 @@ export function VipBenefits() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4" ref={ref}>
             {benefitItems.map(({ icon: Icon, title, description }) => (
               <article
-                className="rounded-[1.75rem] border border-white/10 bg-white/5 p-5 backdrop-blur"
+                className="rounded-[1rem] border border-white/14 bg-white/8 p-5 backdrop-blur"
                 data-benefit-card
                 key={title}
               >
@@ -63,7 +63,7 @@ export function VipBenefits() {
                 <h3 className="mt-5 font-body text-sm font-semibold uppercase tracking-[0.2em] text-white">
                   {title}
                 </h3>
-                <p className="mt-3 font-body text-sm leading-6 text-white/72">{description}</p>
+                <p className="mt-3 font-body text-sm font-medium leading-6 text-white/82">{description}</p>
               </article>
             ))}
           </div>

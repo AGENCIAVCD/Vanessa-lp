@@ -23,17 +23,17 @@ export function CTASection({
     <section className="px-5 py-14 sm:px-8 sm:py-16 lg:px-10">
       <div
         className={[
-          "mx-auto max-w-5xl rounded-[2.5rem] border px-6 py-10 text-center shadow-soft sm:px-10",
+          "mx-auto max-w-5xl rounded-[1.25rem] border px-6 py-10 text-center shadow-soft sm:px-10",
           dark
             ? "border-white/10 bg-forest text-white"
-            : "border-rosegold/22 bg-white/78 text-forest backdrop-blur"
+            : "border-rosegold/30 bg-white text-forest"
         ].join(" ")}
       >
         {eyebrow ? (
           <p
             className={[
               "font-body text-[11px] uppercase tracking-[0.34em]",
-              dark ? "text-rosegold" : "text-forest/68"
+              dark ? "text-rosegold" : "text-forest"
             ].join(" ")}
           >
             {eyebrow}
@@ -46,7 +46,7 @@ export function CTASection({
         <p
           className={[
             "mx-auto mt-5 max-w-2xl font-body text-base leading-8 sm:text-lg",
-            dark ? "text-white/78" : "text-ink/76"
+            dark ? "text-white/84" : "text-ink"
           ].join(" ")}
         >
           {description}

@@ -26,8 +26,8 @@ export function WhatsappButton({
   const resolvedTarget = target ?? (isInternalLink ? "_self" : "_blank");
   const resolvedRel = rel ?? (resolvedTarget === "_blank" ? "noreferrer" : undefined);
   const resolvedClassName = [
-    "group inline-flex items-center justify-center gap-3 rounded-full bg-whatsapp px-6 py-4 font-body text-sm font-semibold uppercase tracking-[0.22em] text-white shadow-[0_18px_34px_rgba(37,211,102,0.16)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#1fb856] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-4 focus-visible:ring-offset-sand",
-    compact ? "px-5 py-3 text-[11px]" : "w-full sm:w-auto",
+    "group inline-flex items-center justify-center gap-3 rounded-full bg-[#16B957] px-6 py-4 font-body text-sm font-extrabold uppercase tracking-[0.14em] text-white shadow-[0_18px_34px_rgba(22,185,87,0.22)] transition duration-300 [text-shadow:0_1px_1px_rgba(0,0,0,0.28)] hover:-translate-y-0.5 hover:bg-[#118F45] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-4 focus-visible:ring-offset-sand",
+    compact ? "px-5 py-3 text-[11px] tracking-[0.11em]" : "w-full sm:w-auto",
     className
   ]
     .filter(Boolean)
